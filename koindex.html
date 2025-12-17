@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>코코네하우스 매니지먼트｜민박 관리 · 청소 대행</title>
+
+<style>
+:root{
+  --bg:#f4fbff;
+  --primary:#2f6fa8;
+  --accent:#7d6651;
+  --card:#ffffff;
+  --muted:#6b7f93;
+  --text:#123244;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:var(--bg);color:var(--text);}
+.header{background:linear-gradient(90deg,#bfe0ff,#e9f6ff);box-shadow:0 2px 8px rgba(10,30,60,0.06);}
+.container{max-width:1100px;margin:0 auto;padding:18px;}
+.brand{display:flex;align-items:center;gap:14px;}
+.logo img{width:56px;height:56px;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.06);}
+.brand h1{font-size:20px;margin:0;color:var(--primary);}
+.hero{padding:36px 18px;text-align:center;}
+.hero h2{font-size:28px;margin:0;color:var(--primary);}
+.hero p{margin:10px 0 0;color:var(--muted);font-size:16px;}
+.grid{display:grid;grid-template-columns:1fr 380px;gap:20px;padding:22px 0;}
+.card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(20,40,70,0.06);}
+h3{color:var(--primary);margin-top:0;}
+.price{font-size:20px;color:var(--accent);font-weight:700;margin:8px 0}
+.small{font-size:13px;color:var(--muted)}
+ul{padding-left:18px;color:var(--muted);}
+.form-field{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+input,textarea,select{padding:10px;border-radius:8px;border:1px solid #d6e8fb;font-size:15px}
+button.submit{background:var(--primary);color:#fff;border:none;padding:12px;border-radius:8px;font-size:16px;cursor:pointer}
+footer{text-align:center;color:var(--muted);padding:18px;margin-top:30px}
+.phone-box{
+  background:#fff7e6;
+  border:1px solid #f0d9b5;
+  padding:12px;
+  border-radius:8px;
+  margin-bottom:18px;
+  color:#704b26;
+  font-weight:600;
+  text-align:center;
+  line-height:1.6;
+}
+.phone-box a{
+  color:#a15800;
+  font-size:18px;
+  font-weight:700;
+  text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+<header class="header">
+  <div class="container" style="display:flex;flex-direction:column;gap:12px">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <div class="brand">
+        <div class="logo">
+          <img src="coconehouse_rogo1.png" alt="Cocone House Logo">
+        </div>
+        <h1>코코네하우스 매니지먼트</h1>
+      </div>
+      <div>
+        <a href="index.html" style="color:var(--primary); font-weight:600;">日本語</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <h2>후쿠오카시의 민박 관리와 청소 대행</h2>
+      <p>월 1,000엔 저비용 운영과 전문 청소. 하카타구·중앙구·히가시구 중심 대응.</p>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="grid">
+
+    <div>
+      <section class="card">
+        <h3>민박 관리 서비스</h3>
+
+        <h4>① 월 1,000엔: 민박 관리 (재위탁 · 기본관리)</h4>
+        <p class="small">
+          월 1,000엔의 민박 기본 관리 플랜입니다. 예약 관리나 인바운드 고객 응대 등은 별도 문의 바랍니다.
+        </p>
+
+        <ul>
+          <li>민박 기본 운영 관리 (재위탁)</li>
+          <li>긴급 연락 대응 (경미한 경우)</li>
+        </ul>
+
+        <p class="price">요금: 월 1,000엔 (세금 별도)</p>
+      </section>
+
+      <section class="card" style="margin-top:20px;">
+        <h3>청소 대행 서비스</h3>
+
+        <p class="small">
+          민박 운영에서 가장 번거로운 청소를 저희가 대신합니다. 청소 · 침구 정리 · 타월/리넨 세탁까지 일괄 대행합니다.
+        </p>
+
+        <ul>
+          <li>교대 청소 (단시간 대응 가능)</li>
+          <li>침구 정리 · 리넨 교체</li>
+          <li>타월 · 시트 세탁</li>
+          <li>소모품 보충 · 재고 확인</li>
+        </ul>
+
+        <p class="small">※ 청소 비용은 물건 규모와 위치에 따라 달라질 수 있습니다. 먼저 문의 부탁드립니다.</p>
+      </section>
+    </div>
+
+    <aside>
+      <div class="card">
+        <h3>문의하기</h3>
+
+        <div class="phone-box">
+          전화문이는 여기:<br>
+          <a href="tel:08056840161">080-5684-0161</a>
+        </div>
+
+        <form action="https://formspree.io/f/xjkneyje" method="POST">
+
+          <div class="form-field">
+            <label>이름</label>
+            <input type="text" name="name" placeholder="이름">
+          </div>
+
+          <div class="form-field">
+            <label>전화번호</label>
+            <input type="tel" name="phone" placeholder="전화번호">
+          </div>
+
+          <div class="form-field">
+            <label>이메일</label>
+            <input type="email" name="email" placeholder="이메일">
+          </div>
+
+          <div class="form-field">
+            <label>문의 내용</label>
+            <textarea name="message" rows="6" placeholder="문의 내용을 입력하세요."></textarea>
+          </div>
+
+          <button type="submit" class="submit">보내기</button>
+        </form>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Cocone House Management</p>
+
+  <div style="margin-top:10px; font-size:14px; line-height:1.6; color:#456;">
+      <strong>회사 정보</strong><br>
+      회사명: Cocone House Management<br>
+      주소: 후쿠오카시 중앙구 쿠로몬 6-4-305<br>
+      전화번호: 080-5684-0161<br>
+      이메일: cocone.fukuoka@gmail.com
+  </div>
+</footer>
+
+</body>
+</html>
