@@ -123,11 +123,14 @@ footer{text-align:center;color:var(--muted);padding:18px;margin-top:30px}
           <a href="tel:08056840161">080-5684-0161</a>
         </div>
 
+        <!-- Improved Formspree form for readable email (table template) -->
         <form action="https://formspree.io/f/xjkneyje" method="POST">
+          <input type="hidden" name="_subject" value="【Cocone House】お問い合わせが届きました">
+          <input type="hidden" name="_template" value="table">
 
           <div class="form-field">
             <label>お名前</label>
-            <input type="text" name="name" placeholder="お名前">
+            <input type="text" name="name" placeholder="お名前" required>
           </div>
 
           <div class="form-field">
@@ -137,12 +140,12 @@ footer{text-align:center;color:var(--muted);padding:18px;margin-top:30px}
 
           <div class="form-field">
             <label>メールアドレス</label>
-            <input type="email" name="email" placeholder="メールアドレス">
+            <input type="email" name="email" placeholder="メールアドレス" required>
           </div>
 
           <div class="form-field">
             <label>お問い合わせ内容</label>
-            <textarea name="message" rows="6" placeholder="お問い合わせ内容"></textarea>
+            <textarea name="message" rows="6" placeholder="お問い合わせ内容" required></textarea>
           </div>
 
           <button type="submit" class="submit">送信</button>
